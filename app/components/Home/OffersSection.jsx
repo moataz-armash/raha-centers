@@ -3,31 +3,31 @@
 import Link from "next/link";
 import Image from "next/image";
 import { sendWhatsAppMessage } from "@/app/utils/whatsapp";
-import { Img1 } from "@/public/assets/img";
+import { Img1, real } from "@/public/assets/img";
 
 const OffersSection = () => {
   const offers = [
     {
       title: "VIP مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفره",
-      price: "500 ر.س",
+      price: "500",
       description: "باقة VIP شاملة: مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفرة",
       image: Img1,
     },
     {
       title: "مساج + حمام مغربي + بخار + بديكير",
-      price: "250 ر.س",
+      price: "250",
       description: "مساج + حمام مغربي + بخار + بديكير",
       image: "/assets/img/download1.webp",
     },
     {
       title: "بديكير مساج",
-      price: "220 ر.س",
+      price: "220",
       description: "بديكير مع مساج للقدمين",
       image: "/assets/img/download2.webp",
     },
     {
       title: "مساج مغربي + بخار",
-      price: "200 ر.س",
+      price: "200",
       description: "مساج مغربي مع جلسة بخار",
       image: "/assets/img/download.webp",
     },
@@ -67,10 +67,11 @@ const OffersSection = () => {
                   {offer.description}
                 </p>
                 <div className="flex items-center justify-between mb-4">
-                  <div>
+                  <div className="flex items-center gap-1">
                     <span className="text-primary font-bold text-2xl">
                       {offer.price}
                     </span>
+                    <Image src={real} width={20} height={7} alt="ريال"/>
                   </div>
                 </div>
                 <button

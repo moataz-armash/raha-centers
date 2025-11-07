@@ -30,6 +30,8 @@ import triangle6 from "./triangle6.jpg";
 
 import relax from "./relax.jpg";
 
+import real from "./WhatsApp Image 2025-11-07 at 21.50.09_7e2c9d30.jpg";
+
 export {
   Logo,
 
@@ -62,4 +64,6 @@ export {
   triangle6,
 
   relax,
+
+  real,
 };
