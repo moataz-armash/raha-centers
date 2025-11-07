@@ -41,7 +41,7 @@ const ContactContent = () => {
   const branches = [
     {
       name: "مركز مطل الواحة",
-      phone: "0550521499",
+      phone: "0592098944",
       address: "مطل الواحة - الحزم",
       hours: "يومياً من 10:00 ص - 10:00 م",
       coords: { lat: 24.5387307, lng: 46.6533781 },
@@ -49,7 +49,7 @@ const ContactContent = () => {
     },
     {
       name: "مركز عنوان الهدوء",
-      phone: "0553790020",
+      phone: "0550521499",
       address: "عنوان الهدوء - طريق ديراب",
       hours: "يومياً من 10:00 ص - 10:00 م",
       coords: { lat: 24.5333721, lng: 46.6561032 },
@@ -57,8 +57,8 @@ const ContactContent = () => {
     },
     {
       name: "مركز المثلث الذهبي",
-      phone: "0592098944",
-      address: "معالم الراحة - طريق الامام مسلم",
+      phone: "0553790020",
+      address: "طويق",
       hours: "يومياً من 10:00 ص - 10:00 م",
       coords: { lat: 24.5835872, lng: 46.5809821 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D8%A7%D9%84%D9%85%D8%AB%D9%84%D8%AB+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A+%D9%84%D9%84%D8%A5%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5835872,46.583557,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f194882c80ca7:0xcd7929f83ee00cea!8m2!3d24.5835872!4d46.5809821!16s%2Fg%2F11yc92bf8g?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
@@ -70,6 +70,14 @@ const ContactContent = () => {
       hours: "يومياً من 10:00 ص - 10:00 م",
       coords: { lat: 24.5592413, lng: 46.5748409 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D9%85%D8%B9%D9%86%D9%89+%D8%A7%D9%84%D8%B1%D8%A7%D8%AD%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5592413,46.5748409,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f19adb887f8b5:0xd477343bf546daac!8m2!3d24.5592413!4d46.5748409!16s%2Fg%2F11yn1xgmlp?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
+    },
+    {
+      name: "معالم الراحة",
+      phone: "0595223735",
+      address: "طريق الامام مسلم",
+      hours: "يومياً من 10:00 ص - 10:00 م",
+      coords: { lat: 24.5488782, lng: 46.6764704 },
+      link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D9%85%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B1%D8%A7%D8%AD%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5488782,46.6764704,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f0f0eb96bde71:0xa10153b7b3ff427d!8m2!3d24.5488782!4d46.6738955!16s%2Fg%2F11yg4ylkxq?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
     },
   ];
 

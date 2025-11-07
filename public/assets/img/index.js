@@ -26,6 +26,9 @@ import triangle2 from "./triangle2.jpg";
 import triangle3 from "./triangle3.jpg";
 import triangle4 from "./triangle4.jpg";
 import triangle5 from "./triangle5.jpg";
+import triangle6 from "./triangle6.jpg";
+
+import relax from "./relax.jpg";
 
 export {
   Logo,
@@ -56,4 +59,7 @@ export {
   triangle3,
   triangle4,
   triangle5,
+  triangle6,
+
+  relax,
 };

@@ -1,5 +1,5 @@
 "use client";
-import { triangle5, motel1, motel2, motel3, motel4, motel5, motel6, relax1, relax2, relax3, relax4, relax5, relax6, triangle1, triangle2, triangle3, triangle4 } from "@/public/assets/img";
+import { triangle5, motel1, motel2, motel3, motel4, motel5, motel6, relax1, relax2, relax3, relax4, relax5, relax6, triangle1, triangle2, triangle3, triangle4, triangle6, relax } from "@/public/assets/img";
 import Image from "next/image";
 import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -11,22 +11,22 @@ const OurBranchesSection = () => {
   const branches = [
     {
       name: "مركز مطل الواحه",
-      phone: "0550521499",
+      phone: "0592098944",
       address: "مطل الواحة - الحزم",
       hours: "يومياً من 10:00 ص - 10:00 م",
       images: [motel6, motel1, motel2 , motel3 , motel4 ,motel5],
     },
     {
       name: "مركز عنوان الهدوء",
-      phone: "0553790020",
+      phone: "0550521499",
       address: "عنوان الهدوء - طريق ديراب",
       hours: "يومياً من 10:00 ص - 10:00 م",
       images: [relax2, relax1, relax3 , relax6 , relax4 ,relax5],
     },
     {
       name: "مركز المثلث الذهبي",
-      phone: "0592098944",
-      address: "معالم الراحة - طريق الامام مسلم",
+      phone: "0553790020",
+      address: "طويق ",
       hours: "يومياً من 10:00 ص - 10:00 م",
       images: [ triangle1, triangle2 ,triangle3 , triangle4 ,triangle5 , relax6],
     },
@@ -35,7 +35,14 @@ const OurBranchesSection = () => {
       phone: "0592098944",
       address: "الموسى",
       hours: "يومياً من 10:00 ص - 10:00 م",
-      images: [relax5, relax1, triangle2 , relax3 , relax4 ,relax6],
+      images: [triangle6, relax1, triangle2 , relax3 , relax4 ,relax6],
+    },
+    {
+      name: "معالم الراحة",
+      phone: "0595223735",
+      address: "طريق الامام مسلم",
+      hours: "يومياً من 10:00 ص - 10:00 م",
+      images: [relax, relax1, triangle2 , relax3 , relax4 ,relax6],
     },
   ];
   return (
