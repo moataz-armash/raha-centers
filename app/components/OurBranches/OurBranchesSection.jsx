@@ -1,5 +1,26 @@
 "use client";
-import { triangle5, motel1, motel2, motel3, motel4, motel5, motel6, relax1, relax2, relax3, relax4, relax5, relax6, triangle1, triangle2, triangle3, triangle4, triangle6, relax } from "@/public/assets/img";
+import {
+  triangle5,
+  motel1,
+  motel2,
+  motel3,
+  motel4,
+  motel5,
+  motel6,
+  relax1,
+  relax2,
+  relax3,
+  relax4,
+  relax5,
+  relax6,
+  triangle1,
+  triangle2,
+  triangle3,
+  triangle4,
+  triangle6,
+  relax,
+  relaxmeaning,
+} from "@/public/assets/img";
 import Image from "next/image";
 import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -14,35 +35,35 @@ const OurBranchesSection = () => {
       phone: "0592098944",
       address: "مطل الواحة - الحزم",
       hours: "يومياً من 10:00 ص - 10:00 م",
-      images: [motel6, motel1, motel2 , motel3 , motel4 ,motel5],
+      images: [motel6, motel1, motel2, motel3, motel4, motel5],
     },
     {
       name: "مركز عنوان الهدوء",
       phone: "0550521499",
       address: "عنوان الهدوء - طريق ديراب",
       hours: "يومياً من 10:00 ص - 10:00 م",
-      images: [relax2, relax1, relax3 , relax6 , relax4 ,relax5],
+      images: [relax2, relax1, relax3, relax6, relax4, relax5],
     },
     {
       name: "مركز المثلث الذهبي",
       phone: "0553790020",
       address: "طويق ",
       hours: "يومياً من 10:00 ص - 10:00 م",
-      images: [ triangle1, triangle2 ,triangle3 , triangle4 ,triangle5 , relax6],
+      images: [triangle1, triangle2, triangle3, triangle4, triangle5, relax6],
     },
     {
       name: "معنى الراحة",
       phone: "0592098944",
       address: "الموسى",
       hours: "يومياً من 10:00 ص - 10:00 م",
-      images: [triangle6, relax1, triangle2 , relax3 , relax4 ,relax6],
+      images: [relaxmeaning, relax1, triangle2, relax3, relax4, relax6],
     },
     {
       name: "معالم الراحة",
       phone: "0595223735",
       address: "طريق الامام مسلم",
       hours: "يومياً من 10:00 ص - 10:00 م",
-      images: [relax, relax1, triangle2 , relax3 , relax4 ,relax6],
+      images: [relax, relax1, triangle2, relax3, relax4, relax6],
     },
   ];
   return (
@@ -63,8 +84,7 @@ const OurBranchesSection = () => {
           {branches.map((branch, index) => (
             <div
               key={index}
-              className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition"
-            >
+              className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
               <Swiper
                 modules={[Autoplay, Pagination]}
                 spaceBetween={30}
@@ -74,8 +94,7 @@ const OurBranchesSection = () => {
                   disableOnInteraction: false,
                 }}
                 pagination={{ clickable: true }}
-                className="pb-12"
-              >
+                className="pb-12">
                 {branch.images.map((img, index) => (
                   <SwiperSlide key={index}>
                     <Image
@@ -97,8 +116,7 @@ const OurBranchesSection = () => {
                     className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                    viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -108,8 +126,7 @@ const OurBranchesSection = () => {
                   </svg>
                   <a
                     href={`tel:+966${branch.phone.replace(/^0/, "")}`}
-                    className="text-gray-700 hover:text-primary transition"
-                  >
+                    className="text-gray-700 hover:text-primary transition">
                     {branch.phone}
                   </a>
                 </div>
@@ -118,8 +135,7 @@ const OurBranchesSection = () => {
                     className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                    viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -132,8 +148,7 @@ const OurBranchesSection = () => {
               </div>
               <Link
                 href="/contact"
-                className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition"
-              >
+                className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition">
                 تواصل معنا
               </Link>
             </div>

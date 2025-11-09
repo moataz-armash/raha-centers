@@ -27,7 +27,7 @@ export default function Home() {
       <OffersSection />
       <TestimonialsSection />
       <BranchesSection />
-      <BlogSection />
+      {/* <BlogSection /> */}
     </>
   );
 }

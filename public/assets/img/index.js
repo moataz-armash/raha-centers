@@ -32,38 +32,35 @@ import relax from "./relax.jpg";
 
 import real from "./WhatsApp Image 2025-11-07 at 21.50.09_7e2c9d30.png";
 
+import relaxmeaning from "./relax-meaning.jpeg";
+
 export {
   Logo,
-
   Img1,
   Img2,
   Img3,
   Img4,
   Img5,
   Img6,
-
   motel1,
   motel2,
   motel3,
   motel4,
   motel5,
   motel6,
-
   relax1,
   relax2,
   relax3,
   relax4,
   relax5,
   relax6,
-
   triangle1,
   triangle2,
   triangle3,
   triangle4,
   triangle5,
   triangle6,
-
   relax,
-
   real,
+  relaxmeaning,
 };
