@@ -14,7 +14,7 @@ const MainNavbar = () => {
     { href: "/about", label: "خدماتنا", id: "services" },
     { href: "/offers", label: "عروضنا", id: "offers" },
     { href: "/ourBranches", label: "فروعنا", id: "ourBranches" },
-    { href: "/blog", label: "المدونة", id: "blog" },
+    // { href: "/blog", label: "المدونة", id: "blog" },
     { href: "/contact", label: "اتصل بنا", id: "contact" },
   ];
 
@@ -41,8 +41,7 @@ const MainNavbar = () => {
               <Link
                 key={link.id}
                 href={link.href}
-                className="font-bold transition-colors text-primary hover:text-primary/80"
-              >
+                className="font-bold transition-colors text-primary hover:text-primary/80">
                 {link.label}
               </Link>
             ))}
@@ -50,8 +49,7 @@ const MainNavbar = () => {
 
           <Link
             href="/contact"
-            className="hidden md:flex bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition"
-          >
+            className="hidden md:flex bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition">
             احجز الان
           </Link>
 
@@ -59,14 +57,12 @@ const MainNavbar = () => {
           <button
             className="md:hidden text-primary"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
+            aria-label="Toggle menu">
             <svg
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
+              viewBox="0 0 24 24">
               {isMobileMenuOpen ? (
                 <path
                   strokeLinecap="round"
@@ -95,16 +91,14 @@ const MainNavbar = () => {
                   key={link.id}
                   href={link.href}
                   className="font-medium transition-colors text-primary hover:text-primary/80"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
+                  onClick={() => setIsMobileMenuOpen(false)}>
                   {link.label}
                 </Link>
               ))}
               <Link
                 href="/contact"
                 className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90 transition text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
+                onClick={() => setIsMobileMenuOpen(false)}>
                 احجز الان
               </Link>
             </div>
