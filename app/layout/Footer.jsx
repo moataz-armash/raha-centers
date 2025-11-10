@@ -12,16 +12,20 @@ const Footer = () => {
     {
       name: "مركز مطل الواحه",
       address: "مطل الواحة - الحزم",
-      phone: "0592098944",
+      phone: "059 209 89 44",
     },
     {
       name: "مركز عنوان الهداء",
       address: "عنوان الهدوء - طريق ديراب",
-      phone: "0550521499",
+      phone: "055 052 14 99",
     },
-    { name: "مركز المثلث الذهبي", address: "طويق", phone: "0553790020" },
-    { name: "معنى الراحة", address: "الموسى", phone: "0592098944" },
-    { name: "معالم الراحة", address: "طريق الامام مسلم", phone: "0595223735" },
+    { name: "مركز المثلث الذهبي", address: "طويق", phone: "055 379 00 20" },
+    { name: "معنى الراحة", address: "الموسى", phone: "059 209 89 44" },
+    {
+      name: "معالم الراحة",
+      address: "طريق الامام مسلم",
+      phone: "059 522 37 35",
+    },
   ];
 
   return (
@@ -69,7 +73,8 @@ const Footer = () => {
                   <p className="text-gray-300 text-sm">{branch.address}</p>
                   <a
                     href={`tel:+966${branch.phone.replace(/^0/, "")}`}
-                    className="text-gray-300 hover:text-white transition text-sm">
+                    className="text-gray-300 hover:text-white transition text-sm"
+                    dir="ltr">
                     {branch.phone}
                   </a>
                 </div>
@@ -84,8 +89,9 @@ const Footer = () => {
               <li>
                 <a
                   href="tel:+966592098944"
-                  className="text-gray-300 hover:text-white transition">
-                  +966 59 209 8944
+                  className="text-gray-300 hover:text-white transition"
+                  dir="ltr">
+                  +966 55 881 78 03
                 </a>
               </li>
             </ul>

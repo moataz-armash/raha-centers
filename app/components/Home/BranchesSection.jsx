@@ -4,27 +4,27 @@ const BranchesSection = () => {
   const branches = [
     {
       name: "مركز مطل الواحه",
-      phone: "0550521499",
+      phone: "055 052 14 99",
       address: "مطل الواحة - الحزم",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
     },
     {
-      name: "مركز عنوان الهداء",
-      phone: "0553790020",
+      name: "مركز عنوان الهدوء",
+      phone: "055 379 00 20",
       address: "عنوان الهدوء - طريق ديراب",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
     },
     {
       name: "مركز المثلث الذهبي",
-      phone: "0592098944",
+      phone: "059 209 89 44",
       address: "معالم الراحة - طريق الامام مسلم",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
     },
     {
       name: "معنى الراحة",
-      phone: "0592098944",
+      phone: "059 209 89 44",
       address: "الموسى",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
     },
   ];
 
@@ -39,11 +39,10 @@ const BranchesSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {branches.slice(0,3).map((branch, index) => (
+          {branches.slice(0, 3).map((branch, index) => (
             <div
               key={index}
-              className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition"
-            >
+              className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
               <h3 className="text-xl font-bold text-primary mb-2">
                 {branch.name}
               </h3>
@@ -54,8 +53,7 @@ const BranchesSection = () => {
                     className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                    viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -64,9 +62,9 @@ const BranchesSection = () => {
                     />
                   </svg>
                   <a
-                    href={`tel:+966${branch.phone.replace(/^0/, '')}`}
+                    href={`tel:+966${branch.phone.replace(/^0/, "")}`}
                     className="text-gray-700 hover:text-primary transition"
-                  >
+                    dir="ltr">
                     {branch.phone}
                   </a>
                 </div>
@@ -75,8 +73,7 @@ const BranchesSection = () => {
                     className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                    viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -89,8 +86,7 @@ const BranchesSection = () => {
               </div>
               <Link
                 href="/contact"
-                className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition"
-              >
+                className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition">
                 تواصل معنا
               </Link>
             </div>
@@ -100,8 +96,7 @@ const BranchesSection = () => {
         <div className="text-center mt-12">
           <Link
             href="/ourBranches"
-            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition inline-block"
-          >
+            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition inline-block">
             جميع الفروع
           </Link>
         </div>
@@ -111,4 +106,3 @@ const BranchesSection = () => {
 };
 
 export default BranchesSection;
-

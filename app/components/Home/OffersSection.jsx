@@ -7,12 +7,12 @@ import { Img1, real } from "@/public/assets/img";
 
 const OffersSection = () => {
   const offers = [
-    {
-      title: "VIP مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفره",
-      price: "500",
-      description: "باقة VIP شاملة: مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفرة",
-      image: Img1,
-    },
+    // {
+    //   title: "VIP مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفره",
+    //   price: "500",
+    //   description: "باقة VIP شاملة: مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفرة",
+    //   image: Img1,
+    // },
     {
       title: "مساج + حمام مغربي + بخار + بديكير",
       price: "250",
@@ -37,7 +37,9 @@ const OffersSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-4">عروض مراكز الراحة</h2>
+          <h2 className="text-4xl font-bold text-primary mb-4">
+            عروض مراكز الراحة
+          </h2>
           <p className="text-gray-600 text-lg">
             استمتع بأفضل العروض الحصرية من مراكز الراحة واحصل على تجربة
             استثنائية بأسعار مميزة
@@ -48,8 +50,7 @@ const OffersSection = () => {
           {offers.map((offer, index) => (
             <div
               key={index}
-              className="bg-white border-2 border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition hover:border-primary"
-            >
+              className="bg-white border-2 border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition hover:border-primary">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   src={offer.image}
@@ -71,7 +72,7 @@ const OffersSection = () => {
                     <span className="text-primary font-bold text-2xl">
                       {offer.price}
                     </span>
-                    <Image src={real} width={20} height={7} alt="ريال"/>
+                    <Image src={real} width={20} height={7} alt="ريال" />
                   </div>
                 </div>
                 <button
@@ -82,8 +83,7 @@ const OffersSection = () => {
                       offer.description
                     )
                   }
-                  className="block w-full bg-primary text-white text-center py-2 rounded-lg hover:bg-primary/90 transition"
-                >
+                  className="block w-full bg-primary text-white text-center py-2 rounded-lg hover:bg-primary/90 transition">
                   احجز الآن
                 </button>
               </div>
@@ -94,8 +94,7 @@ const OffersSection = () => {
         <div className="text-center mt-12">
           <Link
             href="/offers"
-            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition inline-block"
-          >
+            className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition inline-block">
             جميع العروض
           </Link>
         </div>
@@ -105,4 +104,3 @@ const OffersSection = () => {
 };
 
 export default OffersSection;
-

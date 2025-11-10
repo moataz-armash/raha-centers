@@ -5,8 +5,11 @@ const TopNavbar = () => {
     <div className="bg-primary text-white py-2 px-4 relative z-50">
       <div className="container mx-auto flex justify-between items-center text-sm">
         <div className="flex items-center gap-4">
-          <a href="tel:+966592098944" className="hover:text-gray-300 transition">
-            059-209-8944
+          <a
+            dir="ltr"
+            href="tel:+966558817803"
+            className="hover:text-gray-300 transition">
+            055 881 78 03
           </a>
         </div>
         <div className="text-sm">

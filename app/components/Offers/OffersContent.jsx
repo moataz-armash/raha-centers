@@ -8,13 +8,13 @@ import { Img1, Img2, Img3, real } from "@/public/assets/img/index.js";
 
 const OffersContent = () => {
   const offers = [
-    {
-      title: "VIP مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفره",
-      price: "500",
-      description:
-        "باقة VIP شاملة: مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفرة",
-      image: Img1,
-    },
+    // {
+    //   title: "VIP مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفره",
+    //   price: "500",
+    //   description:
+    //     "باقة VIP شاملة: مساج + حمام مغربي + بخار + بديكير + حلاقة + صنفرة",
+    //   image: Img1,
+    // },
     {
       title: "مساج + حمام مغربي + بخار + بديكير",
       price: "250",
@@ -63,8 +63,7 @@ const OffersContent = () => {
               <div
                 key={index}
                 className="bg-white border-2 border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition hover:border-primary cursor-pointer group"
-                onClick={() => router.push(`/offers/${index}`)}
-              >
+                onClick={() => router.push(`/offers/${index}`)}>
                 <div className="relative h-64 overflow-hidden group-hover:scale-105 transition-transform duration-300">
                   <Image
                     src={offer.image}
@@ -95,8 +94,7 @@ const OffersContent = () => {
                         offer.description
                       );
                     }}
-                    className="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-primary/90 transition font-semibold"
-                  >
+                    className="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-primary/90 transition font-semibold">
                     احجز الآن
                   </button>
                 </div>

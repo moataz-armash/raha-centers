@@ -32,37 +32,37 @@ const OurBranchesSection = () => {
   const branches = [
     {
       name: "مركز مطل الواحه",
-      phone: "0592098944",
+      phone: "059 209 89 44",
       address: "مطل الواحة - الحزم",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
       images: [motel6, motel1, motel2, motel3, motel4, motel5],
     },
     {
       name: "مركز عنوان الهدوء",
-      phone: "0550521499",
+      phone: "055 052 14 99",
       address: "عنوان الهدوء - طريق ديراب",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
       images: [relax2, relax1, relax3, relax6, relax4, relax5],
     },
     {
       name: "مركز المثلث الذهبي",
-      phone: "0553790020",
+      phone: "055 379 00 20",
       address: "طويق ",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
       images: [triangle1, triangle2, triangle3, triangle4, triangle5, relax6],
     },
     {
       name: "معنى الراحة",
-      phone: "0592098944",
+      phone: "059 209 89 44",
       address: "الموسى",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
       images: [relaxmeaning, relax1, triangle2, relax3, relax4, relax6],
     },
     {
       name: "معالم الراحة",
-      phone: "0595223735",
+      phone: "059 522 37 35",
       address: "طريق الامام مسلم",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 12:00 م - 03:00 ص",
       images: [relax, relax1, triangle2, relax3, relax4, relax6],
     },
   ];
@@ -126,7 +126,8 @@ const OurBranchesSection = () => {
                   </svg>
                   <a
                     href={`tel:+966${branch.phone.replace(/^0/, "")}`}
-                    className="text-gray-700 hover:text-primary transition">
+                    className="text-gray-700 hover:text-primary transition"
+                    dir="ltr">
                     {branch.phone}
                   </a>
                 </div>

@@ -9,41 +9,41 @@ const ContactContent = () => {
   const branches = [
     {
       name: "مركز مطل الواحة",
-      phone: "0592098944",
+      phone: "059 209 89 44",
       address: "مطل الواحة - الحزم",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5387307, lng: 46.6533781 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D9%88%D8%AD%D9%84%D8%A7%D9%82+%D9%85%D8%B7%D9%84+%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5387307,46.6533781,3450a,13.1y/data=!3m8!1e2!...",
     },
     {
       name: "مركز عنوان الهدوء",
-      phone: "0550521499",
+      phone: "055 052 14 99",
       address: "عنوان الهدوء - طريق ديراب",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5333721, lng: 46.6561032 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D8%B9%D9%86%D9%88%D8%A7%D9%86+%D8%A7%D9%84%D9%87%D8%AF%D9%88%D8%A1+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5333721,46.6561032,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f11e1727efa5f:0xe8583d5ff2b7889f!8m2!3d24.5333721!4d46.6561032!16s%2Fg%2F11yd82xzsk?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D", // أضف الرابط هنا لاحقاً
     },
     {
       name: "مركز المثلث الذهبي",
-      phone: "0553790020",
+      phone: "055 379 00 20",
       address: "طويق",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5835872, lng: 46.5809821 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D8%A7%D9%84%D9%85%D8%AB%D9%84%D8%AB+%D8%A7%D9%84%D8%B0%D9%87%D8%A8%D9%8A+%D9%84%D9%84%D8%A5%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5835872,46.583557,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f194882c80ca7:0xcd7929f83ee00cea!8m2!3d24.5835872!4d46.5809821!16s%2Fg%2F11yc92bf8g?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
     },
     {
       name: "معنى الراحة",
-      phone: "0592098944",
+      phone: "059 209 89 44",
       address: "الموسى",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5592413, lng: 46.5748409 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D9%85%D8%B9%D9%86%D9%89+%D8%A7%D9%84%D8%B1%D8%A7%D8%AD%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5592413,46.5748409,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f19adb887f8b5:0xd477343bf546daac!8m2!3d24.5592413!4d46.5748409!16s%2Fg%2F11yn1xgmlp?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
     },
     {
       name: "معالم الراحة",
-      phone: "0595223735",
+      phone: "059 522 37 35",
       address: "طريق الامام مسلم",
-      hours: "يومياً من 10:00 ص - 10:00 م",
+      hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5488782, lng: 46.6764704 },
       link: "https://www.google.com/maps/place/%D9%85%D8%B3%D8%A7%D8%AC+%D9%85%D8%B9%D8%A7%D9%84%D9%85+%D8%A7%D9%84%D8%B1%D8%A7%D8%AD%D8%A9+%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AE%D8%A7%D8%A1%E2%80%AD/@24.5488782,46.6764704,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f0f0eb96bde71:0xa10153b7b3ff427d!8m2!3d24.5488782!4d46.6738955!16s%2Fg%2F11yg4ylkxq?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D",
     },
@@ -104,16 +104,14 @@ const ContactContent = () => {
                 style={{ border: 2 }}
                 allowFullScreen=""
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             {/* Nearest Branch Button */}
             <div className="mt-6 text-center">
               <button
                 onClick={findNearestBranch}
-                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition"
-              >
+                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition">
                 📍 أقرب فرع لي
               </button>
 
@@ -132,8 +130,7 @@ const ContactContent = () => {
                     href={nearestBranch.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-primary hover:underline"
-                  >
+                    className="text-sm text-primary hover:underline">
                     عرض على الخريطة
                   </a>
                 </div>
@@ -150,11 +147,14 @@ const ContactContent = () => {
               <div className="space-y-4 text-gray-700">
                 <p>
                   📞 الهاتف:{" "}
-                  <a href="tel:+966592098944" className="text-primary">
-                    +966 59 209 8944
+                  <a
+                    href="tel:+966558817803"
+                    className="text-primary"
+                    dir="ltr">
+                    +966 55 881 78 03
                   </a>
                 </p>
-                <p>🕒 ساعات العمل: يومياً من 10:00 ص - 10:00 م</p>
+                <p>🕒 ساعات العمل: يومياً من 12:00 م - 03:00 ص</p>
               </div>
             </div>
 
@@ -167,16 +167,15 @@ const ContactContent = () => {
                 {branches.map((branch, index) => (
                   <div
                     key={index}
-                    className="border-b border-gray-200 pb-4 last:border-0"
-                  >
+                    className="border-b border-gray-200 pb-4 last:border-0">
                     <h3 className="font-semibold text-primary mb-1">
                       {branch.name}
                     </h3>
                     <p className="text-sm text-gray-600">{branch.address}</p>
                     <a
                       href={`tel:+966${branch.phone.replace(/^0/, "")}`}
-                      className="text-sm text-primary hover:underline block"
-                    >
+                      className="text-sm text-primary hover:underline inline"
+                      dir="ltr">
                       {branch.phone}
                     </a>
                   </div>
