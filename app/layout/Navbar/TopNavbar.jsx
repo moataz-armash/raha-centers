@@ -7,7 +7,9 @@ const TopNavbar = () => {
         <div className="flex items-center gap-4">
           <a
             dir="ltr"
-            href="tel:+966558817803"
+            href="https://wa.me/966558817803"
+            rel="noopener noreferrer"
+            target="_blank"
             className="hover:text-gray-300 transition">
             055 881 78 03
           </a>

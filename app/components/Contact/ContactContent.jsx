@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 const ContactContent = () => {
   const [nearestBranch, setNearestBranch] = useState(null);
@@ -9,7 +10,7 @@ const ContactContent = () => {
   const branches = [
     {
       name: "مركز مطل الواحة",
-      phone: "059 209 89 44",
+      phone: "0592098944",
       address: "مطل الواحة - الحزم",
       hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5387307, lng: 46.6533781 },
@@ -17,7 +18,7 @@ const ContactContent = () => {
     },
     {
       name: "مركز عنوان الهدوء",
-      phone: "055 052 14 99",
+      phone: "0550521499",
       address: "عنوان الهدوء - طريق ديراب",
       hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5333721, lng: 46.6561032 },
@@ -25,7 +26,7 @@ const ContactContent = () => {
     },
     {
       name: "مركز المثلث الذهبي",
-      phone: "055 379 00 20",
+      phone: "0553790020",
       address: "طويق",
       hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5835872, lng: 46.5809821 },
@@ -33,7 +34,7 @@ const ContactContent = () => {
     },
     {
       name: "معنى الراحة",
-      phone: "059 209 89 44",
+      phone: "0592098944",
       address: "الموسى",
       hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5592413, lng: 46.5748409 },
@@ -41,7 +42,7 @@ const ContactContent = () => {
     },
     {
       name: "معالم الراحة",
-      phone: "059 522 37 35",
+      phone: "0595223735",
       address: "طريق الامام مسلم",
       hours: "يومياً من 03:00 ص - 12:00 م",
       coords: { lat: 24.5488782, lng: 46.6764704 },
@@ -127,10 +128,22 @@ const ContactContent = () => {
                     {nearestBranch.address}
                   </p>
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={`https://wa.me/966${nearestBranch.phone.replace(
+                      /^0/,
+                      ""
+                    )}`}
+                    className="text-sm text-gray-600 underline inline-flex items-center"
+                    dir="ltr">
+                    {nearestBranch.phone}
+                    <ArrowTopRightOnSquareIcon className="w-4 h-4 opacity-70" />
+                  </a>
+                  <a
                     href={nearestBranch.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-primary hover:underline">
+                    className="text-sm text-primary hover:underline block">
                     عرض على الخريطة
                   </a>
                 </div>
@@ -148,7 +161,9 @@ const ContactContent = () => {
                 <p>
                   📞 الهاتف:{" "}
                   <a
-                    href="tel:+966558817803"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://wa.me/966558817803"
                     className="text-primary"
                     dir="ltr">
                     +966 55 881 78 03
@@ -173,10 +188,16 @@ const ContactContent = () => {
                     </h3>
                     <p className="text-sm text-gray-600">{branch.address}</p>
                     <a
-                      href={`tel:+966${branch.phone.replace(/^0/, "")}`}
-                      className="text-sm text-primary hover:underline inline"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href={`https://wa.me/966${branch.phone.replace(
+                        /^0/,
+                        ""
+                      )}`}
+                      className="text-sm text-primary hover:underline inline-flex items-center"
                       dir="ltr">
                       {branch.phone}
+                      <ArrowTopRightOnSquareIcon className="w-4 h-4 opacity-70 text-primary" />
                     </a>
                   </div>
                 ))}
