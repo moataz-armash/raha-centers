@@ -26,9 +26,9 @@ const OffersSection = () => {
       image: "/assets/img/download2.webp",
     },
     {
-      title: "مساج مغربي + بخار",
+      title: "مساج + حمام مغربي + حمام بخار",
       price: "200",
-      description: "مساج مغربي مع جلسة بخار",
+      description: "مساج  مع حمام مغربي مع حمام بخار",
       image: "/assets/img/download.webp",
     },
   ];
