@@ -102,8 +102,8 @@ const OurBranchesSection = () => {
                 key={index}
                 className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition relative">
                 {index === 0 && (
-                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10 shadow-lg">
-                    جديد
+                  <div className="absolute top-4 right-4 bg-teal-600 text-white px-6 py-1 rounded-full text-sm font-bold z-10 shadow-lg">
+                    أحدث فروعنا
                   </div>
                 )}
                 <Swiper
