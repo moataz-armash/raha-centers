@@ -34,6 +34,13 @@ import real from "./WhatsApp Image 2025-11-07 at 21.50.09_7e2c9d30.png";
 
 import relaxmeaning from "./relax-meaning.jpeg";
 
+import dar1 from "./dar1.jpeg";
+import dar2 from "./dar2.jpeg";
+import dar3 from "./dar3.jpeg";
+import dar4 from "./dar4.jpeg";
+import dar5 from "./dar5.jpeg";
+import dar6 from "./dar6.jpeg";
+
 export {
   Logo,
   Img1,
@@ -63,4 +70,10 @@ export {
   relax,
   real,
   relaxmeaning,
+  dar1,
+  dar2,
+  dar3,
+  dar4,
+  dar5,
+  dar6,
 };

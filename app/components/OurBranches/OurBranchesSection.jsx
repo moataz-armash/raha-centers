@@ -20,6 +20,12 @@ import {
   triangle6,
   relax,
   relaxmeaning,
+  dar1,
+  dar2,
+  dar3,
+  dar4,
+  dar5,
+  dar6,
 } from "@/public/assets/img";
 import Image from "next/image";
 import Link from "next/link";
@@ -65,6 +71,13 @@ const OurBranchesSection = () => {
       hours: "يومياً من 12:00 م - 03:00 ص",
       images: [relax, relax1, triangle2, relax3, relax4, relax6],
     },
+    {
+      name: "مركز دار الواحة للإسترخاء",
+      phone: "059 522 37 35",
+      address: "العريجاء الغربية",
+      hours: "يومياً من 12:00 م - 03:00 ص",
+      images: [dar2, dar5, dar6, dar3, dar5, dar1],
+    },
   ];
   return (
     <>
@@ -81,79 +94,87 @@ const OurBranchesSection = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-          {branches.map((branch, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-              <Swiper
-                modules={[Autoplay, Pagination]}
-                spaceBetween={30}
-                slidesPerView={1}
-                autoplay={{
-                  delay: 3000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                className="pb-12">
-                {branch.images.map((img, index) => (
-                  <SwiperSlide key={index}>
-                    <Image
-                      src={img}
-                      alt="مراكز-الراحه"
-                      className="w-full h-[300px] rounded mb-2"
-                      loading="lazy"
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              <h3 className="text-xl font-bold text-primary mb-2">
-                {branch.name}
-              </h3>
-              <p className="text-gray-600 mb-4">{branch.address}</p>
-              <div className="space-y-2 text-sm">
-                <div className="flex items-center gap-2">
-                  <svg
-                    className="w-5 h-5 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  <a
-                    href={`tel:+966${branch.phone.replace(/^0/, "")}`}
-                    className="text-gray-700 hover:text-primary transition"
-                    dir="ltr">
-                    {branch.phone}
-                  </a>
+          {branches
+            .slice()
+            .reverse()
+            .map((branch, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg transition relative">
+                {index === 0 && (
+                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold z-10 shadow-lg">
+                    جديد
+                  </div>
+                )}
+                <Swiper
+                  modules={[Autoplay, Pagination]}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{ clickable: true }}
+                  className="pb-12">
+                  {branch.images.map((img, index) => (
+                    <SwiperSlide key={index}>
+                      <Image
+                        src={img}
+                        alt="مراكز-الراحه"
+                        className="w-full h-[300px] rounded mb-2"
+                        loading="lazy"
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+                <h3 className="text-xl font-bold text-primary mb-2">
+                  {branch.name}
+                </h3>
+                <p className="text-gray-600 mb-4">{branch.address}</p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center gap-2">
+                    <svg
+                      className="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <a
+                      href={`tel:+966${branch.phone.replace(/^0/, "")}`}
+                      className="text-gray-700 hover:text-primary transition"
+                      dir="ltr">
+                      {branch.phone}
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg
+                      className="w-5 h-5 text-primary"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span className="text-gray-700">{branch.hours}</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <svg
-                    className="w-5 h-5 text-primary"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <span className="text-gray-700">{branch.hours}</span>
-                </div>
+                <Link
+                  href="/contact"
+                  className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition">
+                  تواصل معنا
+                </Link>
               </div>
-              <Link
-                href="/contact"
-                className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition">
-                تواصل معنا
-              </Link>
-            </div>
-          ))}
+            ))}
         </div>
       </section>
     </>
