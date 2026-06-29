@@ -41,6 +41,14 @@ import dar4 from "./dar4.jpeg";
 import dar5 from "./dar5.jpeg";
 import dar6 from "./dar6.jpeg";
 
+import matl1 from "./matl1.jpg";
+import matl2 from "./matl2.jpg";
+import matl3 from "./matl3.jpg";
+import matl4 from "./matl4.jpg";
+import matl5 from "./matl5.jpg";
+import matl6 from "./matl6.jpg";
+import matl7 from "./matl7.jpg";
+
 export {
   Logo,
   Img1,
@@ -76,4 +84,11 @@ export {
   dar4,
   dar5,
   dar6,
+  matl1,
+  matl2,
+  matl3,
+  matl4,
+  matl5,
+  matl6,
+  matl7,
 };

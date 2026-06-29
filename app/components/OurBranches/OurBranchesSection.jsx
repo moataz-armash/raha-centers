@@ -26,6 +26,13 @@ import {
   dar4,
   dar5,
   dar6,
+  matl1,
+  matl2,
+  matl3,
+  matl4,
+  matl5,
+  matl6,
+  matl7,
 } from "@/public/assets/img";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,6 +48,7 @@ const OurBranchesSection = () => {
       phone: "059 209 89 44",
       address: "مطل الواحة - الحزم",
       hours: "يومياً من 12:00 م - 03:00 ص",
+      mapLink: "https://maps.app.goo.gl/wE69gvW1G5fL6m8C8",
       images: [motel6, motel1, motel2, motel3, motel4, motel5],
     },
     {
@@ -48,6 +56,7 @@ const OurBranchesSection = () => {
       phone: "055 052 14 99",
       address: "عنوان الهدوء - طريق ديراب",
       hours: "يومياً من 12:00 م - 03:00 ص",
+        mapLink: "https://maps.app.goo.gl/GM7S7cHg3p1um97Z9",
       images: [relax2, relax1, relax3, relax6, relax4, relax5],
     },
     {
@@ -55,6 +64,7 @@ const OurBranchesSection = () => {
       phone: "055 379 00 20",
       address: "طويق ",
       hours: "يومياً من 12:00 م - 03:00 ص",
+        mapLink: "https://maps.app.goo.gl/b5VnZF5t61z3yV8r8",
       images: [triangle1, triangle2, triangle3, triangle4, triangle5, relax6],
     },
     {
@@ -62,21 +72,32 @@ const OurBranchesSection = () => {
       phone: "059 209 89 44",
       address: "الموسى",
       hours: "يومياً من 12:00 م - 03:00 ص",
+        mapLink: "https://maps.app.goo.gl/Q7dJtm9BKJHMurfm9",
       images: [relaxmeaning, relax1, triangle2, relax3, relax4, relax6],
     },
     {
       name: "معالم الراحة",
       phone: "059 522 37 35",
-      address: "طريق الامام مسلم",
+      address: "المروة، الرياض",
       hours: "يومياً من 12:00 م - 03:00 ص",
+      mapLink: "https://maps.app.goo.gl/KVoA1pWfwWnSmc1M7",
       images: [relax, relax1, triangle2, relax3, relax4, relax6],
     },
     {
       name: "مركز دار الواحة للإسترخاء",
       phone: "059 522 37 35",
-      address: "العريجاء الغربية",
+      address: "عبدالرحمن الداخل، طويق",
       hours: "يومياً من 12:00 م - 03:00 ص",
+      mapLink: "https://maps.app.goo.gl/WoeJyVrJmQyXvuyW7",
       images: [dar2, dar5, dar6, dar3, dar5, dar1],
+    },
+    {
+      name: "مطل الواحة للاسترخاء",
+      phone: "059 482 28 32",
+      address: "طريق خديجة بنت خويلد، طويق",
+      hours: "يومياً من 12:00 م - 03:00 ص",
+      mapLink: "https://maps.app.goo.gl/yjcMiW5SKb4PYTGD7",
+      images: [matl1, matl2, matl3, matl4, matl5, matl6, matl7],
     },
   ];
   return (
@@ -168,9 +189,36 @@ const OurBranchesSection = () => {
                     <span className="text-gray-700">{branch.hours}</span>
                   </div>
                 </div>
+                {branch.mapLink && (
+                  <a
+                    href={branch.mapLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 flex items-center justify-center gap-2 border border-primary text-primary py-2 rounded-lg hover:bg-primary/10 transition text-sm">
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    الموقع على الخريطة
+                  </a>
+                )}
                 <Link
                   href="/contact"
-                  className="mt-4 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition">
+                  className="mt-2 block text-center bg-primary text-white py-2 rounded-lg hover:bg-primary/90 transition">
                   تواصل معنا
                 </Link>
               </div>
